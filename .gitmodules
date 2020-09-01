@@ -1,0 +1,6 @@
+[submodule "malvecbib"]
+	path = malvecbib
+	url = git@github.com:malariagen/malvecbib.git
+[submodule "binder"]
+	path = binder
+	url = git@github.com:malariagen/binder.git
