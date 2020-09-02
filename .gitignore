@@ -1,3 +1,11 @@
+# Manuscript build files
+supplemental.aux
+supplemental.bcf
+supplemental.out
+supplemental.pdf
+supplemental.run.xml
+supplemental.synctex.gz
+
 # Emacs
 *~
 

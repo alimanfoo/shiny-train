@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt,abstracton,hidelinks]{scrartcl}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage[UKenglish]{babel}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[labelsep=period,font=small,labelfont=bf,format=plain]{caption}
+\captionsetup[table]{
+  position=above,
+  belowskip=10pt,
+  aboveskip=0pt,
+}
+\usepackage[group-separator={,}]{siunitx}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{tablefootnote}
+\usepackage{authblk}
+\usepackage{threeparttable}
+\usepackage{afterpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\crefformat{footnote}{#2\footnotemark[#1]#3}
+\crefrangelabelformat{footnote}{#3#1#4--#5\footnotemark{#1}{#2}#6}
+
+\usepackage{grbib}
+\addbibresource{malvecbib/refs.bib}
+
+
+\title{
+Shiny Train
+}
+
+\subtitle{\large{Supplemental Material}}
+
+\author{@@authors}
+
+\begin{document}
+
+\maketitle
+
+\beginsupplement
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Supplemental methods}
+
+@@TODO
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Supplemental figures}
+
+\begin{landscape}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics*[width=1\linewidth,center]{artwork/gwss_bf_gam.png}
+	\end{center}
+	\caption{Shiny.}
+	\label{fig:gwss_bf_gam}
+\end{figure}
+
+\end{landscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Supplemental tables}
+
+@@TODO
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+
+\printbibliography
+
+
+\end{document}
