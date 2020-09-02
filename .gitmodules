@@ -4,6 +4,3 @@
 [submodule "binder"]
 	path = binder
 	url = git@github.com:malariagen/binder.git
-[submodule "agam-selection-atlas-build"]
-	path = agam-selection-atlas-build
-	url = git@github.com:malariagen/agam-selection-atlas-build.git
