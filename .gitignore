@@ -7,6 +7,7 @@ supplemental.run.xml
 supplemental.synctex.gz
 supplemental.bbl
 supplemental.blg
+supplemental.lof
 
 # Emacs
 *~
