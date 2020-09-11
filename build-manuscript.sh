@@ -7,6 +7,9 @@ rm -v supplemental.bcf
 rm -v supplemental.blg
 rm -v supplemental.log
 rm -v supplemental.out
+rm -v supplemental.lof
+rm -v supplemental.lot
+rm -v supplemental.toc
 rm -v supplemental.pdf
 rm -v supplemental.run.xml
 rm -v supplemental.synctex.gz
