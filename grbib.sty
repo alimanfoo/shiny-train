@@ -1,0 +1,108 @@
+%% Genome Research citation and bibliography style
+
+\usepackage[
+	backend=biber,
+	style=authoryear,
+	sorting=nyt,
+	sortlocale=auto,
+	maxcitenames=2,
+	maxbibnames=10,
+	uniquelist=false,
+	uniquename=false,
+	maxitems=2,
+	giveninits=true,
+	terseinits=true,
+	dashed=false,
+	doi=true,
+	isbn=false,
+	url=false,
+	natbib
+]{biblatex}
+
+\renewcommand*{\nameyeardelim}{\addspace}
+
+% General customizations
+
+\DeclareNameAlias{sortname}{family-given}  % Last-1st name order in the bibliography
+\renewcommand*{\revsdnamepunct}{}  % Remove commas between last and first names in bibliography
+\DeclareFieldFormat*{title}{#1}  % Remove "" enclosing the title
+
+\renewbibmacro*{date+extradate}{ % Avoid year inside parenthesis
+	\iffieldundef{labelyear}
+	{}
+	{\printtext[]{\printlabeldateextra}
+		\newunit}
+}%
+
+\DeclareBibliographyDriver{book}{%
+	\printnames{author}%
+\finentry}
+
+% Customization for article
+
+\DeclareBibliographyDriver{article}{%
+	\printnames{author}%
+	\newunit%
+	\usebibmacro{date+extradate}%
+	\printfield{title}\printfield{titleaddon}%
+	\newunit%
+	\printfield{journaltitle}%
+	\newunit%
+	\printfield{volume}%
+	\printfield{pages}%
+	\usebibmacro{doi}
+\usebibmacro{finentry}}
+
+\DeclareFieldFormat[article]{journaltitle}{\mkbibemph{#1}} % italic journal title
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}\addcolon\addspace} % italic journal title
+\DeclareFieldFormat[article]{pages}{#1}
+
+\newbibmacro*{doi}{%
+	\iffieldequalstr{journaltitle}{BioRxiv}{ % Check if the journal is "BioRxiv"
+		\newunit
+		\printfield{doi}}{}
+}
+
+% Customization for book
+
+\DeclareBibliographyDriver{book}{%
+	\printnames{author}%
+	\newunit%
+	\usebibmacro{date+extradate}%
+	\usebibmacro{chaptertitle+booktitle}%
+	\newunit
+	\ifnameundef{editor}{}{\printtext[parens]{\usebibmacro{byeditor+others}}}  % Print (editors)
+	\newunit
+	\usebibmacro{chapter+pages}%
+	\newunit
+	\usebibmacro{publisher+location}%
+\usebibmacro{finentry}}
+
+\DeclareFieldFormat[book]{booktitle}{\mkbibemph{#1}} % italic journal title
+\newbibmacro{chaptertitle+booktitle}{%
+	\iffieldundef{title}
+	{\printfield{booktitle}}
+	{\printfield{title}\newunit\bibstring{in}\addspace\printfield{booktitle}}
+}
+
+\newbibmacro*{publisher+location}{%
+	\printlist{publisher}
+	\iflistundef{location}
+	{}
+	{\addcomma\newunit\printlist{location}}
+	\newunit
+}
+
+% Alias inbook -> book
+
+\DeclareBibliographyAlias{inbook}{book}
+
+\newcommand{\beginsupplement}{%
+  \setcounter{table}{0}
+  \renewcommand{\thetable}{S\arabic{table}}%
+  \renewcommand{\tablename}{Supplemental Table}
+  \setcounter{figure}{0}
+  \renewcommand{\figurename}{Supplemental Figure}
+  \renewcommand{\thefigure}{S\arabic{figure}}%
+}
+

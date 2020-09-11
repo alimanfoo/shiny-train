@@ -1,3 +1,22 @@
+# Manuscript build files
+supplemental.aux
+supplemental.bcf
+supplemental.out
+supplemental.pdf
+supplemental.run.xml
+supplemental.synctex.gz
+supplemental.bbl
+supplemental.blg
+supplemental.lof
+supplemental.lot
+supplemental.toc
+
+# Emacs
+*~
+
+# Data
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
