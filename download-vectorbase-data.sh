@@ -23,9 +23,14 @@ cd $wd
 vb_dir=data/external/vectorbase
 mkdir -pv $vb_dir
 cd $vb_dir
-# TODO vectorbase.org appears down, maybe upgrading, need to update when fixed
+
+# OLD VECTORBASE - gone (sob sob)
 # download https://www.vectorbase.org/download/anopheles-gambiae-pestchromosomesagamp4fagz Anopheles-gambiae-PEST_CHROMOSOMES_AgamP4.fa.gz
 # gunzip --keep --force Anopheles-gambiae-PEST_CHROMOSOMES_AgamP4.fa.gz
 # download https://www.vectorbase.org/download/anopheles-gambiae-pestbasefeaturesagamp412gff3gz Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.12.gff3.gz
 # gunzip --keep --force Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.12.gff3.gz
+
+# NEW VECTORBASE
+download https://vectorbase.org/common/downloads/Current_Release/AgambiaePEST/fasta/data/VectorBase-48_AgambiaePEST_Genome.fasta
+download https://vectorbase.org/common/downloads/Current_Release/AgambiaePEST/gff/data/VectorBase-48_AgambiaePEST.gff
 
