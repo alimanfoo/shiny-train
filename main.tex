@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt,abstracton,hidelinks]{scrartcl}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage[UKenglish]{babel}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[labelsep=period,font=small,labelfont=bf,format=plain]{caption}
+\captionsetup[table]{
+  position=above,
+  belowskip=10pt,
+  aboveskip=0pt,
+}
+\usepackage[group-separator={,}]{siunitx}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{tablefootnote}
+\usepackage{authblk}
+\usepackage{threeparttable}
+\usepackage{afterpage}
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\crefformat{footnote}{#2\footnotemark[#1]#3}
+\crefrangelabelformat{footnote}{#3#1#4--#5\footnotemark{#1}{#2}#6}
+\usepackage{grbib}
+\addbibresource{malvecbib/refs.bib}
+
+%\newcommand{\agam}{\textit{An. gambiae}}
+%\newcommand{\acol}{\textit{An. coluzzii}
+
+\linenumbers
+\doublespacing
+
+\title{
+Selection for insecticide resistance in the African malaria vectors \textit{Anopheles gambiae} and \textit{Anopheles coluzzii}
+}
+
+\author{@@authors}
+
+\begin{document}
+
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+%
+The evolution of insecticide resistance is a major threat to the control of malaria vectors in sub-Saharan Africa.
+%
+Despite decades of research, we still lack a clear picture of which genes are driving the adaptive response to vector control, and novel mechanisms of insecticide resistance continue to be discovered.
+%
+We analysed data from whole-genome sequencing of wild-caught mosquitoes from 13 countries to search for genes under recent positive selection in the major malaria vector species \textit{Anopheles gambiae} and \textit{Anopheles coluzzii}.
+%
+We confirm strong signals of selection replicated across multiple mosquito populations at six genes that have a previously validated association with insecticide resistance.
+%
+We discover a further three loci with signals of selection of comparable strength and architecture, also replicated across multiple populations.
+%
+At each of these three loci we identify a candidate gene that we propose as a novel site of adaptation to insecticides in these species.
+%
+At all nine loci we find evidence that adaptation has been facilitated by gene flow between countries or mosquito species.
+%
+These findings both broaden and deepen our knowledge of the molecular basis of insecticide resistance in malaria vectors, underlining the need for improved surveillance to identify and track new forms of resistance as they arise and spread in response to changing vector control strategies.
+%
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Introduction}
+
+@@TODO
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Results}
+
+@@TODO
+
+\begin{figure}[t!]
+	\begin{center}
+		\includegraphics*[width=1.05\linewidth,center]{artwork/fig_h12_filter_simple.png}
+	\end{center}
+	\caption{
+%	
+Genome-wide selection scans using the H12 statistic \citep{Garud2015}.
+%
+Each row shows selection scan values for a single mosquito population.
+%
+Coloured markers show H12 values computed in moving windows across the autosomal chromosomes 2 and 3 and the sex chromosome X.
+%
+Higher H12 values indicate a greater degree of haplotype homozygosity within the corresponding genomic window. 
+%
+Triangular markers above indicate functionally validated insecticide-resistance genes (closed) and genes with strong evidence for selection in this study proposed as novel candidate insecticide resistance genes (open).
+%
+}
+	\label{fig:h12}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Discussion}
+
+@@TODO
+
+
+\printbibliography
+
+
+\end{document}

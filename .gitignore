@@ -10,6 +10,17 @@ supplemental.blg
 supplemental.lof
 supplemental.lot
 supplemental.toc
+main.aux
+main.bcf
+main.out
+main.pdf
+main.run.xml
+main.synctex.gz
+main.bbl
+main.blg
+main.lof
+main.lot
+main.toc
 
 # Emacs
 *~
